@@ -68,12 +68,4 @@ Vagrant.configure("2") do |config|
   #   apt-get update
   #   apt-get install -y apache2
   # SHELL
-  config.vm.provision "chef_zero" do |chef|
-    chef.cookbooks_path = "cookbooks"
-    chef.data_bags_path = "data_bags"
-    chef.nodes_path = "nodes"
-    chef.roles_path = "roles"
-    
-    chef.add_role "hammer"
-  end
 end
