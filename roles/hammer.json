@@ -1,0 +1,10 @@
+{
+  "name": "Hammer",
+  "description": "Hammer API Server",
+  "default_attributes": {
+  },
+  "run_list": [
+    "recipe[hammer]",
+    "recipe[hammer::deploy]"
+  ]
+}
